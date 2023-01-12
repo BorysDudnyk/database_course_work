@@ -67,4 +67,46 @@ public class DatabaseHandler extends Configs {
         return resSet;
     }
 
+    /*private void getConnection() throws SQLException {
+
+        try {
+            Connection connection = dbConnection.getConnection();
+            Statement statement = null;
+            try {
+                statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
+            ResultSet rs = statement.executeQuery("Select * from user");
+        } catch (SQLException ex) {
+            throw new RuntimeException(ex);
+        } catch (RuntimeException ex) {
+            throw new RuntimeException(ex);
+        }
+
+
+        ResultSet rs = null;
+
+        rs.last();
+        System.out.println("Last Users is" + rs.getInt("USERS_FIRSTNAME") + "" + rs.getInt("USERS_LASTNAME") + "" +
+                rs.getInt("USERS_LOCATION") + "" + rs.getDate("USERS_ID"));
+
+        rs.first();
+        System.out.println("First  Users is" + rs.getInt("USERS_FIRSTNAME") + "" + rs.getInt("USERS_LASTNAME") + "" +
+                rs.getInt("USERS_LOCATION") + "" + rs.getDate("USERS_ID"));
+
+        rs.absolute(3);
+        System.out.println("Users is" + rs.getInt("USERS_FIRSTNAME") + "" + rs.getInt("USERS_LASTNAME") + "" +
+                rs.getInt("USERS_LOCATION") + "" + rs.getDate("USERS_ID"));
+
+        rs.next();
+        System.out.println("Next  Users is" + rs.getInt("USERS_FIRSTNAME") + "" + rs.getInt("USERS_LASTNAME") + "" +
+                rs.getInt("USERS_LOCATION") + "" + rs.getDate("USERS_ID"));
+
+        rs.last();
+        System.out.println("Last  Users is" + rs.getInt("USERS_FIRSTNAME") + "" + rs.getInt("USERS_LASTNAME") + "" +
+                rs.getInt("USERS_LOCATION") + "" + rs.getDate("USERS_ID"));
+
+    }*/
+    
 }
