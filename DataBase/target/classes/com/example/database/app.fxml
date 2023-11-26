@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.Controller.HomeController">
+    <children>
+        <AnchorPane prefHeight="72.0" prefWidth="500.0" style="-fx-background-color: #32CD32;">
+         <children>
+                <Label layoutX="147.0" layoutY="6.0" prefHeight="62.0" prefWidth="200.0" text="Welcome" textFill="WHITE">
+                    <font>
+                        <Font name="Cambria" size="50.0" />
+                    </font>
+                </Label>
+         </children>
+        </AnchorPane>
+        <AnchorPane layoutY="587.0" prefHeight="39.0" prefWidth="500.0" style="-fx-background-color: #32CD10;" />
+      <Button fx:id="the_greatest_length_of_the_sheet" layoutX="260.0" layoutY="163.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" style="-fx-background-color: #009000;" text="Найбільша довжина листа" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="the_shortest_length_of_the_sheet" layoutX="14.0" layoutY="163.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" style="-fx-background-color: #009000;" text="Найменша довжина листа" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Inf_about_users" layoutX="14.0" layoutY="221.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="226.0" style="-fx-background-color: #009000;" text="Інф. про користувачів" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="users_did_not_letters" layoutX="14.0" layoutY="282.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="305.0" style="-fx-background-color: #009000;" text="Користувачі які не отримали листіів" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="the_user_who_sent_the_smallest_letter" layoutX="14.0" layoutY="344.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="369.0" style="-fx-background-color: #009000;" text="Користувач який відправив найменший лист" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+        <TextArea fx:id="displayArea" layoutX="8.0" layoutY="451.0" prefHeight="122.0" prefWidth="485.0" />
+      <Label layoutX="49.0" layoutY="84.0" prefHeight="62.0" prefWidth="404.0" text="Виберіть опцію, натиснувши на кнопку">
+         <font>
+            <Font name="Cambria" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="389.0" prefHeight="62.0" prefWidth="265.0" text="Вивід результатів запиту">
+         <font>
+            <Font name="Cambria" size="22.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
